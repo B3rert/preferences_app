@@ -1,4 +1,4 @@
-# preferences_app
+# Preferencias LLave valor App 
 
 Demo para guardar preferecias de usuario (llave, valor) con [shared_preferences](https://pub.dev/packages/shared_preferences) en flutter. 
 
