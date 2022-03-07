@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:preferences_app/share_preferences/preferences.dart';
 import 'package:preferences_app/widgets/side_menu.dart';
 
 class SettingsScreen extends StatefulWidget {
@@ -11,9 +12,10 @@ class SettingsScreen extends StatefulWidget {
 }
 
 class _SettingsScreenState extends State<SettingsScreen> {
-  bool isDarkMode = false;
-  int gender = 1;
-  String name = 'Niky';
+  // bool isDarkMode = false;
+  // int gender = 1;
+  // String name = 'Niky';
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,29 +36,29 @@ class _SettingsScreenState extends State<SettingsScreen> {
               const Divider(),
               SwitchListTile.adaptive(
                 title: const Text('Dark Mode'),
-                value: isDarkMode,
+                value: Preferences.isDarkMode,
                 onChanged: (value) {
-                  isDarkMode = value;
+                  Preferences.isDarkMode = value;
                   setState(() {});
                 },
               ),
               const Divider(),
               RadioListTile<int>(
                 value: 1,
-                groupValue: gender,
+                groupValue: Preferences.gender,
                 title: const Text("Masculino"),
                 onChanged: (value) {
-                  gender = value ?? 1;
+                  Preferences.gender = value ?? 1;
                   setState(() {});
                 },
               ),
               const Divider(),
               RadioListTile<int>(
                 value: 2,
-                groupValue: gender,
+                groupValue: Preferences.gender,
                 title: const Text("Femenino"),
                 onChanged: (value) {
-                  gender = value ?? 2;
+                  Preferences.gender = value ?? 2;
                   setState(() {});
                 },
               ),
@@ -64,13 +66,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: TextFormField(
-                  initialValue: 'Tobias',
+                  initialValue: Preferences.name,
                   decoration: const InputDecoration(
                     labelText: 'Nombre',
                     helperText: "Nombre de usuario",
                   ),
                   onChanged: (value) {
-                    name = value;
+                    Preferences.name = value;
                     setState(() {});
                   },
                 ),
