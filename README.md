@@ -1,16 +1,19 @@
 # preferences_app
 
-A new Flutter project.
+Demo para guardar preferecias de usuario (llave, valor) con [shared_preferences](https://pub.dev/packages/shared_preferences) en flutter. 
 
-## Getting Started
+## Caracteristicas
 
-This project is a starting point for a Flutter application.
+* Uso de Drawer (Menu hamburguesa)
+* Guarda algunos datos de ejemplo para las preferencias de usuario.
+* Cambia y mantiene el modo oscuro a claro permanentemente.
 
-A few resources to get you started if this is your first Flutter project:
+## Vista previa
+![Screenshot](screenshots/home.png)
+![Screenshot](screenshots/settings.png)
+![Screenshot](screenshots/menu.png)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Cómo usar
+1. Clonar el proyecto.
+2. Descargar las dependencias.
+3. Ejecutar el proyecto.
