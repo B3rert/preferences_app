@@ -9,8 +9,17 @@ Demo para guardar preferecias de usuario (llave, valor) con [shared_preferences]
 * Cambia y mantiene el modo oscuro a claro permanentemente.
 
 ## Vista previa
+
+* Home Screen
+
 ![Screenshot](screenshots/home.png)
+
+* Setting Screen
+
 ![Screenshot](screenshots/settings.png)
+
+* Menu Drawer
+
 ![Screenshot](screenshots/menu.png)
 
 ## Cómo usar
